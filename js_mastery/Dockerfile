@@ -1,6 +1,6 @@
 FROM node:20.10.0-slim
 
-WORKDIR /app/node/js_mastery
+WORKDIR /home/node/app
 COPY . .
 
 RUN npm ci
