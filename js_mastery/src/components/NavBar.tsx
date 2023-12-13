@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -20,6 +21,19 @@ const NavBar = () => {
           alt="Hamburger menu"
           className="block md:hidden"
         />
+
+        <ul className="flex-center gap-x-3 max-md:hidden md:gap-x-10">
+          <li className="body-text text-gradient_blue-purple !font-bold">
+            <Link href="https://jsmastery.pro/next13" target="_blank">
+              Next.js Course
+            </Link>
+          </li>
+          <li className="body-text text-gradient_blue-purple !font-bold">
+            <Link href="https://jsmastery.pro/next13" target="_blank">
+              Next.js Course
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
