@@ -62,6 +62,9 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundImage: {
+        banner: "url('/jsm_resources_banner.svg')",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: 0 },
