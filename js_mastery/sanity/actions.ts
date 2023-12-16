@@ -31,8 +31,7 @@ export const getResourcesPlaylist = async() => {
 
 export const getResources = async({ query, category, page }: GetResoucesParams) => {
     try {
-
-        const resources = await readClient.fetch(
+        return await readClient.fetch(
                 groq`${buildQuery({
                     type: "resource",
                     query,
@@ -48,6 +47,5 @@ export const getResources = async({ query, category, page }: GetResoucesParams) 
                     category 
                 }`
             )
-
     } catch(error) { console.log(error) }
 }
