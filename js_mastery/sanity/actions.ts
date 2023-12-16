@@ -25,7 +25,7 @@ export const getResourcesPlaylist = async() => {
             }`
         );
         
-        return resources;
+        return resources as any[];
     } catch(error) {  console.log(error) }
 }
 
