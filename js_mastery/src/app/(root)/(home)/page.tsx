@@ -1,7 +1,22 @@
 import { Filters } from "@/components/Filters";
 import { SearchForm } from "@/components/SearchForm";
+import { getResources, getResourcesPlaylist } from '../../../../sanity/actions';
 
-const Home = () => {
+export const revalidate = 900;
+
+interface Props {
+    searchParams: { [key: string]: string | undefined }
+}
+
+const Home = async ({searchParams}: Props) => {
+    const resources = await getResources({
+        query: searchParams?.query || "",
+        category: searchParams?.category || "",
+        page: '1'
+    })
+
+    const resourcesPlaylist = getResourcesPlaylist()
+
     return (
         <main className="flex-center paddings mx-auto w-full max-w-screen-2xl flex-col">
 
@@ -12,6 +27,8 @@ const Home = () => {
                 <SearchForm/>
             </section>
             <Filters/>
+
+            
             
         </main>
     );
