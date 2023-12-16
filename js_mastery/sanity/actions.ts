@@ -46,6 +46,6 @@ export const getResources = async({ query, category, page }: GetResoucesParams) 
                     slug,
                     category 
                 }`
-            )
+            ) as any[]
     } catch(error) { console.log(error) }
 }
