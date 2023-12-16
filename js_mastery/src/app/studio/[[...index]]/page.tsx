@@ -4,7 +4,6 @@ import Head from "next/head";
 import { NextStudio } from "next-sanity/studio";
 import { metadata } from "next-sanity/studio/metadata";
 import config from "../../../../sanity.config";
-import { client } from "../../../../sanity/lib/client";
 
 export default function StudioPage() {
   return (
