@@ -35,31 +35,27 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+        primary: "#2190FF",
+        black:{
+          100: "#0D1117",
+          200: "#161B22",
+          300: "#1F2428",
+          400: "#242C38",
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+        grey: {
+          100: "#969BA5",
+          200: "#55616D",
         },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+        white: {
+          DEFAULT: "#FFF",
+          400: "#A3B3BC",
+          500: "#A4B8D5",
+          800: "#D0DFFF",
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        purple: "#8C7CFF",
+        pink: "#ED5FBD",
+        violet: "#F16565",
+        orange: "#FF964B",
       },
       borderRadius: {
         lg: "var(--radius)",
