@@ -5,7 +5,7 @@ interface BuildQueryParams {
   query: string;
   category: string;
   page: number;
-  perPage: number;
+  perPage?: number;
 }
 
 export function buildQuery(params: BuildQueryParams) {
