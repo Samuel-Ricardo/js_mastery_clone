@@ -1,4 +1,4 @@
-import qs from "query-string";
+import qs from 'query-string'
 
 interface BuildQueryParams {
   type: string;
@@ -11,13 +11,15 @@ interface BuildQueryParams {
 export function buildQuery(params: BuildQueryParams) {
   const { type, query, category, page = 1, perPage = 20 } = params;
 
-  const conditions = [`*[_type=="${type}"]`];
+  const conditions = [`*[_type=="${type}"`];
 
-  if (query) conditions.push(`title match "*${query}*" `);
+  if (query) conditions.push(`title match "*${query}*"`);
 
-  if (category && category !== "all")
+  if (category && category !== "all") {
     conditions.push(`category == "${category}"`);
+  }
 
+  // Calculate pagination limits
   const offset = (page - 1) * perPage;
   const limit = perPage;
 
@@ -35,22 +37,19 @@ interface UrlQueryParams {
   keysToRemove?: string[];
 }
 
-export function formUrlQuery({
-  params,
-  key,
-  value,
-  keysToRemove,
-}: UrlQueryParams) {
+export function formUrlQuery({ params, key, value, keysToRemove }: UrlQueryParams) {
   const currentUrl = qs.parse(params);
 
-  if (keysToRemove) {
-    keysToRemove.forEach((key) => delete currentUrl[key]);
-  } else if (key && value) {
+  if(keysToRemove) {
+    keysToRemove.forEach((keyToRemove) => {
+      delete currentUrl[keyToRemove];
+    })
+  } else if(key && value) {
     currentUrl[key] = value;
   }
 
   return qs.stringifyUrl(
     { url: window.location.pathname, query: currentUrl },
     { skipNull: true }
-  );
+  )
 }
