@@ -40,7 +40,7 @@ const Home = async ({searchParams}: Props) => {
                     
                     <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
                         {resources?.length! > 0 ? (
-                            resources?.map(resource =>
+                            resources?.map((resource: any) =>
                                 <ResourceCard
                                     key={resource._id}
                                     title={resource.title}
@@ -59,7 +59,7 @@ const Home = async ({searchParams}: Props) => {
                 </section>
             )}
 
-            {resourcesPlaylist?.map(item => (
+            {resourcesPlaylist?.map((item:any) => (
                 <section key={item._id} className="flex-center mt-6 w-full flex-col sm:mt-20">
                     <h3 className="heading3 self-start text-white-800">{item.title}</h3>
                     <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
