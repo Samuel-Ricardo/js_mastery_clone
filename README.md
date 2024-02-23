@@ -48,3 +48,25 @@
 <br>
 
 <h2>  | :artificial_satellite: About:  </h2>
+
+<p align="justify">
+In this project, the objective is to build a website that beats all the main factors and metrics that measure how fast and well-structured an application can be, along with good ranking and SEO strategies. These metrics are known as Web Vitals
+</p>
+
+<p align="justify">
+With this objective in mind, I recreated the JS_Mastery website using React and the NextJS Framework, with the idea of creating a project closer to the real world, having to deal with dynamic data coming from Sanity CMS;
+</p>
+
+<br>
+
+📡 | Hosted on Vercel: [ https://js-mastery-clone.vercel.app/ ]
+
+<br>
+
+#
+
+<br>
+
+<h2 id="techs">
+  :building_construction: | Technologies and Concepts Studied:
+</h2>
