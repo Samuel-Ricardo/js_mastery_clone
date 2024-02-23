@@ -100,3 +100,63 @@ With this objective in mind, I recreated the JS_Mastery website using React and 
   💻 | Application:
 </h2>
 
+<p align="justify">
+The application is a website where we show all the courses offered by JS Mastery, you can do a search in real time, navigate between them and see more details
+</p>
+
+<p align="justify">
+*Remember this software runs on free machines, that is, with the minimum of resources to fit into free plans, so with scarce resources in the production environment these were the results I obtained
+</p>
+
+<br/>
+
+### GTmetrix
+
+ <img width="auto" src="https://media.discordapp.net/attachments/852529276083503134/1186477752036110366/image.png?ex=65e67303&is=65d3fe03&hm=c55fbd8fc21ab5a27048637146006febac323090d4047ec22af95274051779ce&=&format=webp&quality=lossless&width=705&height=397"/> 
+
+<br>
+
+<p align="justify">
+In GTmetrix I got an A grade, having a great performance with all metrics and the total page load was below 1 second
+</p>
+
+ <img width="auto" src="https://media.discordapp.net/attachments/852529276083503134/1186478279272693881/image.png?ex=65e67381&is=65d3fe81&hm=234ca92331d2979e7ae62626ed78c1c58addf1be28f9389382c84114c9bfb6ad&=&format=webp&quality=lossless&width=705&height=397"/> 
+
+<br>
+
+<p align="justify">
+All page metadata has been properly treated
+</p>
+
+### PageSpeed Insights - [ PC ]
+
+ <img width="auto" src="https://media.discordapp.net/attachments/852529276083503134/1186479624302100562/image.png?ex=65e674c2&is=65d3ffc2&hm=02059cfa35655199661d60848e73ebcdda3d06fc8e76acd562c174c4cbfd5bc3&=&format=webp&quality=lossless&width=705&height=397"/> 
+
+<br>
+
+<p align="justify">
+I also analyzed PageSpeed Insights, similar to Google Chrome Lighthouse. In it I obtained 100% performance, 97% accessibility, 100% in good practices and 100% in SEO, all metrics with great results
+</p>
+
+### PageSpeed Insights - [ Mobile ]
+
+ <img width="auto" src="https://media.discordapp.net/attachments/852529276083503134/1186479657671995422/image.png?ex=65e674ca&is=65d3ffca&hm=ab076e2de0546e7dd1b75af395b6a5b35a23dbc46da69c91a7d7c111e6f53641&=&format=webp&quality=lossless&width=705&height=397"/> 
+
+<br>
+
+<p align="justify">
+This tool also allows you to test a mobile environment, with reduced computing resources and 3G internet to simulate a smartphone. Even in this scenario, the site maintains a notable high performance.
+</p>
+
+<br>
+
+📡 | Hosted on Vercel: [ https://js-mastery-clone.vercel.app/ ]
+
+<br>
+<br>
+
+<h2 id="run-project"> 
+   👨‍💻 | How to use
+</h2>
+
+
