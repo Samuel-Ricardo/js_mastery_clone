@@ -75,7 +75,7 @@ With this objective in mind, I recreated the JS_Mastery website using React and 
 
 - NextJS 14
 - TailwindCSS
-- Styled Components
+- Shadcn/ui
 - Typescript
 - Docker
 - Sanity
