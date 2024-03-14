@@ -71,7 +71,7 @@ With this objective in mind, I recreated the JS_Mastery website using React and 
   :building_construction: | Technologies and Concepts Studied:
 </h2>
 
-> <a href='https://nextjs.org/'> <img width="128px" src="https://www.to-r.net/media/_next/static/images/unstable_runtimejs-next-js-1dd0504f9a73958d98e95bd2ff4bc2ec.png" /> </a>
+> <a href='https://nextjs.org/'> <img width="64px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" /> </a>
 
 - NextJS 14
 - TailwindCSS
